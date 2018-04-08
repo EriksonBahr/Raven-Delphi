@@ -29,9 +29,9 @@ package RavenClient;
 
 requires
   rtl,
-  IndySystem,
-  IndyProtocols,
-  IndyCore,
+  IndySystem120,
+  IndyProtocols120,
+  IndyCore120,
   soaprtl;
 
 contains

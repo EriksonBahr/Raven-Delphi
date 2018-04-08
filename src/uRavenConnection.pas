@@ -3,7 +3,7 @@ unit uRavenConnection;
 interface
 
 uses
-System.SysUtils, System.Variants, System.Classes ,System.DateUtils, IdBaseComponent,Generics.Collections,Generics.Defaults,
+SysUtils, Variants, Classes ,DateUtils, IdBaseComponent,Generics.Collections,Generics.Defaults,
   IdComponent, IdTCPConnection, IdTCPClient, IdHTTP,uEvent;
 
 const

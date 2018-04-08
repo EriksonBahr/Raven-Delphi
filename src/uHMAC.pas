@@ -3,7 +3,7 @@ unit uHMAC;
 interface
 
 uses
-  System.SysUtils,
+  SysUtils,
   EncdDecd,
   IdHMAC,
   IdSSLOpenSSL,

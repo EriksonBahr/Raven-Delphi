@@ -2,8 +2,8 @@ unit uEvent;
 
 interface
 
-uses System.SysUtils, System.Variants, System.Classes, System.DateUtils,
-  System.Generics.Collections, TypInfo;
+uses SysUtils, Variants, Classes, DateUtils,
+  Generics.Collections, TypInfo;
 
 const
   TAGS_LENGTH = 10;
@@ -97,7 +97,8 @@ begin
   begin
     tagsJson := tagsJson + key + ':"' + tags.Items[key] + '",';
   end;
-  Result := tagsJson.Remove(tagsJson.Length - 1) + '}';
+  System.Delete(tagsJson, Length(tagsJson) - 1, 1);
+  Result := tagsJson + '}';// tagsJson.Remove(tagsJson.Length - 1) + '}';
 end;
 
 function BaseEvent.extraToJson(extra: TDictionary<string, string>): string;
@@ -109,7 +110,8 @@ begin
   begin
     extraJson := extraJson + key + ':"' + tags.Items[key] + '",';
   end;
-  Result := extraJson.Remove(extraJson.Length - 1) + '}';
+  System.Delete(extraJson, Length(extraJson) - 1, 1);
+  Result := extraJson + '}';// extraJson.Remove(extraJson.Length - 1) + '}';
 end;
 
 procedure BaseEvent.setCulprit(_culprit: string);
