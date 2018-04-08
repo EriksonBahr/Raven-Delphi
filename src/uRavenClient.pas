@@ -128,8 +128,8 @@ end;
 
 procedure TRavenClient.setDSN;
 begin
-  self.FDSN := FPROTOCOL+'://' + FPUBLIC_KEY + ':' + FSECRET_KEY + '@' + FHOST + ':' +
-    IntToStr(FPORT) + '/api/' + IntToStr(FPROJECT_ID) + '/store/';
+  self.FDSN := FPROTOCOL+'://' + FPUBLIC_KEY + ':' + FSECRET_KEY + '@' + FHOST +{ ':' +}
+    {IntToStr(FPORT)+ } '/api/' + IntToStr(FPROJECT_ID) + '/store/';
     FRavenConnection.setDsn(Self.FDSN);
 end;
 

@@ -25,6 +25,8 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
 			<DCC_DependencyCheckOutputName>..\..\..\..\Public\Documents\RAD Studio\6.0\Bpl\RavenClient.bpl</DCC_DependencyCheckOutputName>
 			<GenPackage>true</GenPackage>
 			<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
@@ -60,12 +62,14 @@
 			<DCCReference Include="rtl.dcp"/>
 			<DCCReference Include="IndySystem120.dcp"/>
 			<DCCReference Include="IndyProtocols120.dcp"/>
-			<DCCReference Include="IndyCore12.dcp"/>
+			<DCCReference Include="IndyCore120.dcp"/>
 			<DCCReference Include="soaprtl.dcp"/>
+			<DCCReference Include="Jcl.dcp"/>
 			<DCCReference Include="src\uEvent.pas"/>
 			<DCCReference Include="src\uRavenConnection.pas"/>
 			<DCCReference Include="src\uRavenClient.pas"/>
 			<DCCReference Include="src\uHMAC.pas"/>
+			<DCCReference Include="IndyCore12.dcp"/>
 			<DCCReference Include="IndyCore1.dcp"/>
 			<DCCReference Include="IndyCore.dcp"/>
 			<DCCReference Include="IndyProtocols12.dcp"/>
